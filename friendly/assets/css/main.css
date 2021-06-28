@@ -1,0 +1,100 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Manrope', sans-serji;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+ul,li{
+	display: block;
+	margin-right: 32px;
+	font-size: 14px;
+	padding: 0;
+
+}
+.logo{
+	margin-right: 305px;
+}
+.container{
+	width: 1440px;
+	margin: 0 auto;
+	background-color: #000000;
+}
+.header a{
+	color: #FFFFFF;
+
+}
+.menu {
+	display: flex;
+}
+.menu li a{
+	/*text-transform: uppercase;*/
+	text-decoration: none;
+	letter-spacing: 0.1px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+}
+.menu li {
+	margin-right: 40px;
+
+}
+.nav {
+	display: flex;
+	align-items: center;
+	padding: 120px;
+	padding-top: 22px;
+}
+.btn{
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	color: #9B44FF;
+	text-decoration: none;
+	letter-spacing: 0.1px;
+	padding: 10px 30px;
+	border: 1px solid black;
+	width: 100px;
+	border-radius: 8px;
+	background: #9B44FF;
+	margin-left: 14px;
+	}
+.Hero {
+	display: flex;
+	align-items: center;
+	padding-left: 120px;
+	padding-top: 256px;
+	padding-bottom: 256px;
+}	
+.Group h1{
+	letter-spacing: 0.1px;
+	font-size: 70px;
+	text-decoration: none;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+
+}
+.Group p{
+	letter-spacing: 0.1px;
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: initial;
+	display: flex;
+	align-items: center;
+	padding-top: 18px;
+}
+.btn3{
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	color: #9B44FF;
+	text-decoration: none;
+	letter-spacing: 0.1px;
+	padding: 10px 30px;
+	border: 1px solid black;
+	width: 100px;
+	border-radius: 8px;
+	background: #9B44FF;
+	
+	}
