@@ -144,9 +144,19 @@ function friendly_scripts() {
 
 	wp_enqueue_style( 'friendly-main', get_template_directory_uri(). '/assets/css/main.css', array(), _S_VERSION );
 
+	wp_enqueue_style( 'friendly-slick', get_template_directory_uri(). '/assets/slick/slick.css', array(), _S_VERSION );
+
+	wp_enqueue_style( 'friendly-slick', get_template_directory_uri(). '/assets/slick/slick-theme.css', array(), _S_VERSION );
+
 	wp_style_add_data( 'friendly-style', 'rtl', 'replace' );
 
+	wp_enqueue_script( 'jquery');
+
 	wp_enqueue_script( 'friendly-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+
+	wp_enqueue_script( 'friendly-navigation', get_template_directory_uri() . '/assets/slick/slick.min.js', array(), _S_VERSION, true );
+
+	wp_enqueue_script( 'friendly-navigation', get_template_directory_uri() . '/assets/js/script.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -180,4 +190,6 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+require get_template_directory() . '/inc/option-panel.php';
 

@@ -1,4 +1,5 @@
-body{
+html ,body{
+	width: 1440px;
 	padding: 0;
 	margin: 0;
 	font-family: 'Manrope', sans-serji;
@@ -16,7 +17,6 @@ ul,li{
 	margin-right: 305px;
 }
 .container{
-	width: 1440px;
 	margin: 0 auto;
 	background-color: #000000;
 }
@@ -83,6 +83,7 @@ ul,li{
 	display: flex;
 	align-items: center;
 	padding-top: 18px;
+	color: #FFFFFF;
 }
 .btn3{
 	display: block;
@@ -98,3 +99,157 @@ ul,li{
 	background: #9B44FF;
 	
 	}
+	
+.BFooter{
+	display: flex;
+	padding-bottom: 64px;
+	padding-left: 300px;
+
+}
+
+.footer__col--first{
+		width: 25%;
+	}
+.footer__col--second{
+		width: 25%;
+	}
+.footer__col--third{
+		width: 25%;
+	}
+.footer__col--quarter{
+		width: 25%;
+	}
+.footer__menu a {
+	text-decoration: none;
+	margin-top: 24px;
+	color: #FFFFFF;
+	font-weight:100;
+}
+.footer__menu li{
+	margin-top: 24px;
+}
+.apps{
+	padding-top: 16px;
+}
+.footer__doun {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+		}
+.footer__img {
+		
+width: 50%;
+margin-right: auto;
+}
+.reserved{
+	width: 50%;
+	padding-left: 300px;
+}
+
+.block1{
+	color: black;
+	font-weight: initial;
+	align-items: center;
+	padding-top: 18px;
+	padding-bottom: 64px;
+	margin: 120px;
+		
+	
+}
+.block__col{
+	display: flex;
+}
+
+.block1 h4{
+	letter-spacing: 0.1px;
+	font-size: 40px;
+	font-weight: bold;
+	align-items: center;
+	color: black;
+
+}
+
+	
+
+.detals li{
+	padding-top: 4px;
+}
+
+.block1__col--first{
+	width: 25%;
+}
+
+.block2 h4{
+	letter-spacing: 0.1px;
+	font-size: 40px;
+	font-weight: bold;
+	align-items: center;
+	color: black;
+	padding-left: 231px;
+}
+
+ .slider {
+        width: 50%;
+        margin-left: 600px;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before{
+    	background: url("img/Left Arrow.png");
+    }
+    .slick-next:before {
+      background: url("img/Right Arrow.png");
+    }
+
+.Contact{
+	margin-top: 100px;
+	display: flex;
+}
+    
+.Contact img{
+	padding-left: 120px;
+	width: 607px;
+	height: 607px;
+}
+
+.Contact h4{
+	letter-spacing: 0.1px;
+	font-size: 40px;
+	font-weight: bold;
+	align-items: center;
+	color: black;
+	padding-left: 131px;
+}
+
+.subskray{
+	padding-left: 131px;
+	padding-bottom: 32px;
+
+}
+
+.inpN{
+	padding-bottom: 24px;
+
+}
+
+.inpF{
+	padding-bottom: 24px;
+
+}
+.inpe{
+		padding-bottom: 24px;
+
+}
+
+.subskray__input{
+	background: #F9F9F9;
+	border: 0;
+
+}

@@ -13,12 +13,11 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-
-	<?php wp_head(); ?>
+	<meta charset="utf-8">
+		<title>Friendly</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet"> 
+		<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -26,8 +25,8 @@
 	<header id="header" class="header">
 		<div class="container">
 			<div class="nav">
-				<img src="img/Logo.png" alt="Friendly" class="logo">
-				<ul class="menu">
+				<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/Logo.png" alt="Friendly" class="logo">
+				<!--<ul class="menu">
 					<li>
 						<a href="#">
 							About
@@ -53,7 +52,15 @@
 							Jobs
 						</a>
 					</li>
-				</ul>
+				</ul>-->
+				<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				)
+			);
+			?>
 				<a href="#" class="btn">Login</a>
 				<a href="#" class="btn">Sign_up</a>
             </div>
@@ -67,7 +74,7 @@
 				</div>	
 				<div class="ill">
 
-					<img src="img/ill.svg" alt="Friendly" class="ill">
+					<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/ill.svg" alt="Friendly" class="ill">
 				</div>
 			</div>	
 		</div>
